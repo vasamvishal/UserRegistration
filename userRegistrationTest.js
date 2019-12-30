@@ -21,14 +21,22 @@ describe("for emailPattern functions testCases ",function(){
  
 	 it("for valid email neglecting optional parameters",function(){
          let userName="abc@yahoo.com" 
-         var result=UserRegistration.emailPattern(userName);
+         let result=UserRegistration.emailPattern(userName);
          assert.equal(result,true);
         });
+
 	 it("for valid email with one optional parameters",function(){
-         let userName="abc-100@yahoo.com" 
-         var result=UserRegistration.emailPattern(userName);
+         let userEmail="abc-100@yahoo.com" 
+         let result=UserRegistration.emailPattern(userEmail);
          assert.equal(result,true);
         });
+ 
+	 it("for valid email with second optional parameters",function(){
+         let userEmail="abc@yahoo.com.in" 
+         let result=UserRegistration.emailPattern(userEmail);
+         assert.equal(result,true);
+        });
+
 
  });
 
