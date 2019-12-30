@@ -14,6 +14,12 @@ describe('Test for Sum Functionalities',function(){
                 var result=sum("b","a");
                 assert.equal(result,0);
         });
+	it('given both a and b in values  should return output value',function(){
+                var result=sum(3,4);
+                assert.equal(result,7);
+        });
+
+
 
 
 });
