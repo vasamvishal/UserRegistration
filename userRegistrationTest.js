@@ -107,6 +107,12 @@ describe("for passWord functions testCases ",function(){
          let result=UserRegistration.phoneNumber(userPassword);
          assert.equal(result,false);
         });
+	
+	 it("for password not contaning any special charcter should return false",function(){
+         let userPassword="vishalVa1" 
+         let result=UserRegistration.phoneNumber(userPassword);
+         assert.equal(result,false);
+        });
 
 
 });
