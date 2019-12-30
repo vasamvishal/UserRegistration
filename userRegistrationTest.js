@@ -75,11 +75,19 @@ describe("for phoneNumber functions testCases ",function(){
          let result=UserRegistration.phoneNumber(userPhoneNumber);
          assert.equal(result,true);
         });
- 	it("for invalid first digits inphone_number ",function(){
+	
+ 	it("for invalid first digits in phoneNumber ",function(){
          let userPhoneNumber="0576543210" 
          let result=UserRegistration.phoneNumber(userPhoneNumber);
          assert.equal(result,false);
         });
+	
+	 it("for invalid count of digits in phoneNumber ",function(){
+         let userPhoneNumber="0576543210" 
+         let result=UserRegistration.phoneNumber(userPhoneNumber);
+         assert.equal(result,false);
+        });
+
 
  });
 
