@@ -114,6 +114,11 @@ describe("for passWord functions testCases ",function(){
          assert.equal(result,false);
         });
 
+	 it("for password is valid should return true",function(){
+         let userPassword="vishlVwe23@" 
+         let result=UserRegistration.phoneNumber(userPassword);
+         assert.equal(result,false);
+        });
 
 });
 
