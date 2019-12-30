@@ -44,7 +44,13 @@ describe("for emailPattern functions testCases ",function(){
         });
 	
 	 it("for Invalid email neglecting optional parameters",function(){
-         let userEmail="abc" 
+         let userEmail="abc@@yahoo,com" 
+         let result=UserRegistration.emailPattern(userEmail);
+         assert.equal(result,false);
+        });
+
+	 it("for Invalid email with one wrong optional parameters",function(){
+         let userEmail="abc++@yahoo.com" 
          let result=UserRegistration.emailPattern(userEmail);
          assert.equal(result,false);
         });
