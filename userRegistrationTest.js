@@ -87,7 +87,13 @@ describe("for phoneNumber functions testCases ",function(){
          let result=UserRegistration.phoneNumber(userPhoneNumber);
          assert.equal(result,false);
         });
-
-
  });
+
+describe("for passWord functions testCases ",function(){
+	 it("if length is less than 8 characters ",function(){
+         let userPassword="vishal" 
+         let result=UserRegistration.phoneNumber(userPassword);
+         assert.equal(result,result);
+        });
+});
 
