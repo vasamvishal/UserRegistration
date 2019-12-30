@@ -24,5 +24,11 @@ describe("for emailPattern functions testCases ",function(){
          var result=UserRegistration.emailPattern(userName);
          assert.equal(result,true);
         });
+	 it("for valid email with one optional parameters",function(){
+         let userName="abc-100@yahoo.com" 
+         var result=UserRegistration.emailPattern(userName);
+         assert.equal(result,true);
+        });
+
  });
 
