@@ -66,7 +66,14 @@ describe("for emailPattern functions testCases ",function(){
          let result=UserRegistration.emailPattern(userEmail);
          assert.equal(result,false);
         });
+});
 
-
+describe("for phoneNumber functions testCases ",function(){
+ 
+	 it("for valid phone_number ",function(){
+         let userPhoneNumber="9876543210" 
+         let result=UserRegistration.phoneNumber(userPhoneNumber);
+         assert.equal(result,true);
+        });
  });
 
