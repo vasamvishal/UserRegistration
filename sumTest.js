@@ -6,10 +6,9 @@ describe('Test for Sum Functionalities',function(){
 		var result=sum("","");
 		assert.equal(result,0);
 	});
-	it('given both a and b is undefined  should return 0',function(){
+	it('given both a and b is undefined should return 0',function(){
                 var result=sum(undefined,undefined);
                 assert.equal(result,0);
         });
 
-        });
-        
+});
