@@ -1,0 +1,25 @@
+{
+  "name": "vishalvasam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01basictest.js",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasamvishal/UserRegistration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasamvishal/UserRegistration/issues"
+  },
+  "homepage": "https://github.com/vasamvishal/UserRegistration#readme"
+}
