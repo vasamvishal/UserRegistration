@@ -90,10 +90,17 @@ describe("for phoneNumber functions testCases ",function(){
  });
 
 describe("for passWord functions testCases ",function(){
-	 it("if length is less than 8 characters ",function(){
+	 it("for length of characters is less than 8 characters ",function(){
          let userPassword="vishal" 
          let result=UserRegistration.phoneNumber(userPassword);
          assert.equal(result,result);
         });
+	
+	it("for password not contaning any upperCharacter characters ",function(){
+         let userPassword="vishalvasam" 
+         let result=UserRegistration.phoneNumber(userPassword);
+         assert.equal(result,result);
+        });
+
 });
 
