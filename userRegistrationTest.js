@@ -1,7 +1,7 @@
 var assert=require('assert');
 var UserRegistration=require('./userRegistration');
 
-describe("for userName Functions testCase ",function(){
+describe("for userName functions testCases ",function(){
 
 	it("for valid userName",function(){
 	 let userName="VishalVasam12" 
@@ -15,5 +15,14 @@ describe("for userName Functions testCase ",function(){
          assert.equal(result,false);
         });
 		
-
 });
+
+describe("for emailPattern functions testCases ",function(){
+ 
+	 it("for valid email neglecting optional parameters",function(){
+         let userName="abc@yahoo.com" 
+         var result=UserRegistration.emailPattern(userName);
+         assert.equal(result,true);
+        });
+ });
+
