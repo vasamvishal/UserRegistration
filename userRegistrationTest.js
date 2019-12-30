@@ -75,5 +75,11 @@ describe("for phoneNumber functions testCases ",function(){
          let result=UserRegistration.phoneNumber(userPhoneNumber);
          assert.equal(result,true);
         });
+ 	it("for invalid first digits inphone_number ",function(){
+         let userPhoneNumber="0576543210" 
+         let result=UserRegistration.phoneNumber(userPhoneNumber);
+         assert.equal(result,false);
+        });
+
  });
 
