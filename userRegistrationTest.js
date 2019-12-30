@@ -9,6 +9,11 @@ describe("for userName Functions testCase ",function(){
 	 assert.equal(result,true);
 	});
 	
-	
+	it("for Invalid userName",function(){
+         let userName="vishalVasam12@" 
+         var result=UserRegistration.userNameFunction(userName);
+         assert.equal(result,false);
+        });
+		
 
 });

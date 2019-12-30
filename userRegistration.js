@@ -2,7 +2,7 @@
 var readLine=require('readline-sync');
 class UserRegistration{
  userNameFunction(userName){
-		let userNameValidator=RegExp('^[A-Z]{1}[a-zA-Z]{2,}');
+		let userNameValidator=RegExp('^[A-Z]{1}[a-zA-Z0-9]{2,}$');
 		let validate=userNameValidator.test(userName);
 		return validate;
 	}
